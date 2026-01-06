@@ -1,0 +1,397 @@
+<h2 id="overv" class="list">Digital Identity Description Language: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AccessCapability" title="https://w3id.org/didl#AccessCapability">AccessCapability</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/def/dedl#Action" title="https://w3id.org/def/dedl#Action">Action</a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
+   </li>
+   <li>
+      <a href="#Assertion" title="https://w3id.org/didl#Assertion">Assertion</a>
+   </li>
+   <li>
+      <a href="#AssertionCollection" title="https://w3id.org/didl#AssertionCollection">AssertionCollection</a>
+   </li>
+   <li>
+      <a href="#AssertionFormat" title="https://w3id.org/didl#AssertionFormat">AssertionFormat</a>
+   </li>
+   <li>
+      <a href="#Attribute" title="https://w3id.org/didl#Attribute">Attribute</a>
+   </li>
+   <li>
+      <a href="#Credential" title="https://w3id.org/didl#Credential">Credential</a>
+   </li>
+   <li>
+      <a href="#CredentialFormat" title="https://w3id.org/didl#CredentialFormat">CredentialFormat</a>
+   </li>
+   <li>
+      <a href="#Identifier" title="https://w3id.org/didl#Identifier">Identifier</a>
+   </li>
+   <li>
+      <a href="#IdentifierCollection" title="https://w3id.org/didl#IdentifierCollection">IdentifierCollection</a>
+   </li>
+   <li>
+      <a href="#IdentifierFormat" title="https://w3id.org/didl#IdentifierFormat">IdentifierFormat</a>
+   </li>
+   <li>
+      <a href="#IdentifierFunctional" title="https://w3id.org/didl#IdentifierFunctional">IdentifierFunctional</a>
+   </li>
+   <li>
+      <a href="#Identity" title="https://w3id.org/didl#Identity">Identity</a>
+   </li>
+   <li>
+      <a href="#IdentitySubject" title="https://w3id.org/didl#IdentitySubject">IdentitySubject</a>
+   </li>
+   <li>
+      <a href="#InherenceBasedCredential" title="https://w3id.org/didl#InherenceBasedCredential">InherenceBasedCredential</a>
+   </li>
+   <li>
+      <a href="#Key" title="https://w3id.org/didl#Key">Key</a>
+   </li>
+   <li>
+      <a href="#KnowledgeBasedCredential" title="https://w3id.org/didl#KnowledgeBasedCredential">KnowledgeBasedCredential</a>
+   </li>
+   <li>
+      <a href="#PossessionBasedCredential" title="https://w3id.org/didl#PossessionBasedCredential">PossessionBasedCredential</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/security#Proof" title="https://w3id.org/security#Proof">Proof</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/def/dedl#Resource" title="https://w3id.org/def/dedl#Resource">Resource</a>
+   </li>
+   <li>
+      <a href="#Status" title="https://w3id.org/didl#Status">Status</a>
+   </li>
+   <li>
+      <a href="#Value" title="https://w3id.org/didl#Value">Value</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#accessCapability" title="https://w3id.org/didl#accessCapability">accessCapability</a>
+   </li>
+   <li>
+      <a href="#assertedAttribute" title="https://w3id.org/didl#assertedAttribute">assertedAttribute</a>
+   </li>
+   <li>
+      <a href="#assertion" title="https://w3id.org/didl#assertion">assertion</a>
+   </li>
+   <li>
+      <a href="#assertionFormat" title="https://w3id.org/didl#assertionFormat">assertionFormat</a>
+   </li>
+   <li>
+      <a href="#controlledBy" title="https://w3id.org/didl#controlledBy">controlledBy</a>
+   </li>
+   <li>
+      <a href="#controls" title="https://w3id.org/didl#controls">controls</a>
+   </li>
+   <li>
+      <a href="#credential" title="https://w3id.org/didl#credential">credential</a>
+   </li>
+   <li>
+      <a href="#credentialAttribute" title="https://w3id.org/didl#credentialAttribute">credentialAttribute</a>
+   </li>
+   <li>
+      <a href="#credentialFormat" title="https://w3id.org/didl#credentialFormat">credentialFormat</a>
+   </li>
+   <li>
+      <a href="#functional" title="https://w3id.org/didl#functional">functional</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/identifier" title="http://purl.org/dc/elements/1.1/identifier">identifier</a>
+   </li>
+   <li>
+      <a href="#identifier" title="https://w3id.org/didl#identifier">identifier</a>
+   </li>
+   <li>
+      <a href="#identifierFormat" title="https://w3id.org/didl#identifierFormat">identifierFormat</a>
+   </li>
+   <li>
+      <a href="#includesAssertion" title="https://w3id.org/didl#includesAssertion">includesAssertion</a>
+   </li>
+   <li>
+      <a href="#includesIdentifier" title="https://w3id.org/didl#includesIdentifier">includesIdentifier</a>
+   </li>
+   <li>
+      <a href="#key" title="https://w3id.org/didl#key">key</a>
+   </li>
+   <li>
+      <a href="#proof" title="https://w3id.org/didl#proof">proof</a>
+   </li>
+   <li>
+      <a href="#relatesToCredential" title="https://w3id.org/didl#relatesToCredential">
+         <span>relates To Credential</span>
+      </a>
+   </li>
+   <li>
+      <a href="#relatesTo" title="https://w3id.org/didl#relatesTo">relatesTo</a>
+   </li>
+   <li>
+      <a href="#status" title="https://w3id.org/didl#status">status</a>
+   </li>
+   <li>
+      <a href="#supportedAction" title="https://w3id.org/didl#supportedAction">supportedAction</a>
+   </li>
+   <li>
+      <a href="#supportedResource" title="https://w3id.org/didl#supportedResource">supportedResource</a>
+   </li>
+   <li>
+      <a href="#value" title="https://w3id.org/didl#value">value</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://www.w3.org/ns/credentials#issuanceDate" title="https://www.w3.org/ns/credentials#issuanceDate">issuanceDate</a>
+   </li>
+   <li>
+      <a href="#issueDate" title="https://w3id.org/didl#issueDate">issueDate</a>
+   </li>
+   <li>
+      <a href="#issuer" title="https://w3id.org/didl#issuer">issuer</a>
+   </li>
+   <li>
+      <a href="#https://www.w3.org/ns/credentials#issuer" title="https://www.w3.org/ns/credentials#issuer">issuer</a>
+   </li>
+   <li>
+      <a href="#namespace" title="https://w3id.org/didl#namespace">namespace</a>
+   </li>
+   <li>
+      <a href="#profile" title="https://w3id.org/didl#profile">profile</a>
+   </li>
+   <li>
+      <a href="#renewableTill" title="https://w3id.org/didl#renewableTill">renewableTill</a>
+   </li>
+   <li>
+      <a href="#uid" title="https://w3id.org/didl#uid">uid</a>
+   </li>
+   <li>
+      <a href="#validFrom" title="https://w3id.org/didl#validFrom">validFrom</a>
+   </li>
+   <li>
+      <a href="#https://www.w3.org/ns/credentials#validFrom" title="https://www.w3.org/ns/credentials#validFrom">validFrom</a>
+   </li>
+   <li>
+      <a href="#validTo" title="https://w3id.org/didl#validTo">validTo</a>
+   </li>
+   <li>
+      <a href="#https://www.w3.org/ns/credentials#validTo" title="https://www.w3.org/ns/credentials#validTo">validTo</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AccessToken" title="https://w3id.org/didl#AccessToken">AccessToken</a>
+   </li>
+   <li>
+      <a href="#Active" title="https://w3id.org/didl#Active">Active</a>
+   </li>
+   <li>
+      <a href="#Address" title="https://w3id.org/didl#Address">Address</a>
+   </li>
+   <li>
+      <a href="#ApplicationToken" title="https://w3id.org/didl#ApplicationToken">ApplicationToken</a>
+   </li>
+   <li>
+      <a href="#BearerToken" title="https://w3id.org/didl#BearerToken">BearerToken</a>
+   </li>
+   <li>
+      <a href="#CertificateID" title="https://w3id.org/didl#CertificateID">CertificateID</a>
+   </li>
+   <li>
+      <a href="#ContractID" title="https://w3id.org/didl#ContractID">ContractID</a>
+   </li>
+   <li>
+      <a href="#DateOfBirth" title="https://w3id.org/didl#DateOfBirth">DateOfBirth</a>
+   </li>
+   <li>
+      <a href="#Department" title="https://w3id.org/didl#Department">Department</a>
+   </li>
+   <li>
+      <a href="#DeviceID" title="https://w3id.org/didl#DeviceID">DeviceID</a>
+   </li>
+   <li>
+      <a href="#DID" title="https://w3id.org/didl#DID">DID</a>
+   </li>
+   <li>
+      <a href="#DN" title="https://w3id.org/didl#DN">DN</a>
+   </li>
+   <li>
+      <a href="#DocumentID" title="https://w3id.org/didl#DocumentID">DocumentID</a>
+   </li>
+   <li>
+      <a href="#E.164" title="https://w3id.org/didl#E.164">E.164</a>
+   </li>
+   <li>
+      <a href="#Email" title="https://w3id.org/didl#Email">Email</a>
+   </li>
+   <li>
+      <a href="#EPC" title="https://w3id.org/didl#EPC">EPC</a>
+   </li>
+   <li>
+      <a href="#EUI-48" title="https://w3id.org/didl#EUI-48">EUI-48</a>
+   </li>
+   <li>
+      <a href="#EUI-64" title="https://w3id.org/didl#EUI-64">EUI-64</a>
+   </li>
+   <li>
+      <a href="#Fingerprint" title="https://w3id.org/didl#Fingerprint">Fingerprint</a>
+   </li>
+   <li>
+      <a href="#FirstName" title="https://w3id.org/didl#FirstName">FirstName</a>
+   </li>
+   <li>
+      <a href="#Gender" title="https://w3id.org/didl#Gender">Gender</a>
+   </li>
+   <li>
+      <a href="#GUID" title="https://w3id.org/didl#GUID">GUID</a>
+   </li>
+   <li>
+      <a href="#IDToken" title="https://w3id.org/didl#IDToken">IDToken</a>
+   </li>
+   <li>
+      <a href="#Inactive" title="https://w3id.org/didl#Inactive">Inactive</a>
+   </li>
+   <li>
+      <a href="#InContract" title="https://w3id.org/didl#InContract">InContract</a>
+   </li>
+   <li>
+      <a href="#InOrganization" title="https://w3id.org/didl#InOrganization">InOrganization</a>
+   </li>
+   <li>
+      <a href="#IRI" title="https://w3id.org/didl#IRI">IRI</a>
+   </li>
+   <li>
+      <a href="#JsonWebToken" title="https://w3id.org/didl#JsonWebToken">JsonWebToken</a>
+   </li>
+   <li>
+      <a href="#KerberosTicket" title="https://w3id.org/didl#KerberosTicket">KerberosTicket</a>
+   </li>
+   <li>
+      <a href="#LastLogin" title="https://w3id.org/didl#LastLogin">LastLogin</a>
+   </li>
+   <li>
+      <a href="#LastName" title="https://w3id.org/didl#LastName">LastName</a>
+   </li>
+   <li>
+      <a href="#MachineID" title="https://w3id.org/didl#MachineID">MachineID</a>
+   </li>
+   <li>
+      <a href="#Nationality" title="https://w3id.org/didl#Nationality">Nationality</a>
+   </li>
+   <li>
+      <a href="#OneTimePassword" title="https://w3id.org/didl#OneTimePassword">OneTimePassword</a>
+   </li>
+   <li>
+      <a href="#OrganizationID" title="https://w3id.org/didl#OrganizationID">OrganizationID</a>
+   </li>
+   <li>
+      <a href="#Password" title="https://w3id.org/didl#Password">Password</a>
+   </li>
+   <li>
+      <a href="#PasswordCredential" title="https://w3id.org/didl#PasswordCredential">PasswordCredential</a>
+   </li>
+   <li>
+      <a href="#PhoneNumber" title="https://w3id.org/didl#PhoneNumber">PhoneNumber</a>
+   </li>
+   <li>
+      <a href="#ProcessID" title="https://w3id.org/didl#ProcessID">ProcessID</a>
+   </li>
+   <li>
+      <a href="#ProductID" title="https://w3id.org/didl#ProductID">ProductID</a>
+   </li>
+   <li>
+      <a href="#PublicKey" title="https://w3id.org/didl#PublicKey">PublicKey</a>
+   </li>
+   <li>
+      <a href="#RefreshToken" title="https://w3id.org/didl#RefreshToken">RefreshToken</a>
+   </li>
+   <li>
+      <a href="#ResourceID" title="https://w3id.org/didl#ResourceID">ResourceID</a>
+   </li>
+   <li>
+      <a href="#Revoked" title="https://w3id.org/didl#Revoked">Revoked</a>
+   </li>
+   <li>
+      <a href="#RFC1035" title="https://w3id.org/didl#RFC1035">RFC1035</a>
+   </li>
+   <li>
+      <a href="#RFC5322" title="https://w3id.org/didl#RFC5322">RFC5322</a>
+   </li>
+   <li>
+      <a href="#RFC7613" title="https://w3id.org/didl#RFC7613">RFC7613</a>
+   </li>
+   <li>
+      <a href="#Role" title="https://w3id.org/didl#Role">Role</a>
+   </li>
+   <li>
+      <a href="#SAML2.0Assertion" title="https://w3id.org/didl#SAML2.0Assertion">SAML2.0Assertion</a>
+   </li>
+   <li>
+      <a href="#SerialNumber" title="https://w3id.org/didl#SerialNumber">SerialNumber</a>
+   </li>
+   <li>
+      <a href="#SessionKey" title="https://w3id.org/didl#SessionKey">SessionKey</a>
+   </li>
+   <li>
+      <a href="#Signature" title="https://w3id.org/didl#Signature">Signature</a>
+   </li>
+   <li>
+      <a href="#SmartCard" title="https://w3id.org/didl#SmartCard">SmartCard</a>
+   </li>
+   <li>
+      <a href="#Title" title="https://w3id.org/didl#Title">Title</a>
+   </li>
+   <li>
+      <a href="#URI" title="https://w3id.org/didl#URI">URI</a>
+   </li>
+   <li>
+      <a href="#URL" title="https://w3id.org/didl#URL">URL</a>
+   </li>
+   <li>
+      <a href="#URN" title="https://w3id.org/didl#URN">URN</a>
+   </li>
+   <li>
+      <a href="#UserID" title="https://w3id.org/didl#UserID">UserID</a>
+   </li>
+   <li>
+      <a href="#Username" title="https://w3id.org/didl#Username">Username</a>
+   </li>
+   <li>
+      <a href="#UUIDv1" title="https://w3id.org/didl#UUIDv1">UUIDv1</a>
+   </li>
+   <li>
+      <a href="#UUIDv2" title="https://w3id.org/didl#UUIDv2">UUIDv2</a>
+   </li>
+   <li>
+      <a href="#UUIDv3" title="https://w3id.org/didl#UUIDv3">UUIDv3</a>
+   </li>
+   <li>
+      <a href="#UUIDv4" title="https://w3id.org/didl#UUIDv4">UUIDv4</a>
+   </li>
+   <li>
+      <a href="#UUIDv5" title="https://w3id.org/didl#UUIDv5">UUIDv5</a>
+   </li>
+   <li>
+      <a href="#VerifiableCredential" title="https://w3id.org/didl#VerifiableCredential">VerifiableCredential</a>
+   </li>
+   <li>
+      <a href="#VerifiablePresentation" title="https://w3id.org/didl#VerifiablePresentation">VerifiablePresentation</a>
+   </li>
+   <li>
+      <a href="#Voice" title="https://w3id.org/didl#Voice">Voice</a>
+   </li>
+   <li>
+      <a href="#X.509Certificate" title="https://w3id.org/didl#X.509Certificate">X.509Certificate</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
