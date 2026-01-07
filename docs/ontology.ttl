@@ -8,12 +8,10 @@
 
 <https://w3id.org/didl> rdf:type owl:Ontology ;
                          <http://purl.org/dc/elements/1.1/creator> "Jiahang Chen"@en ;
-                         <http://purl.org/dc/elements/1.1/description> "This vocabulary is used to annotate identity concepts related to authentication and authorization in data ecosystems."@en ;
-                         <http://purl.org/dc/elements/1.1/title> "DIDL Vocabulary & Expression 0.1"@en ;
-                         <http://purl.org/dc/terms/abstract> "The Digital Identity Description Language (DIDL) is an abstract language to describe identity concepts used in data ecosystems. The core component, identity, is specialized into identifiers, credentials, and assertions, utilized in the process of authentication and authorization."@en ;
-                         <http://purl.org/dc/terms/created> "2025-04-29T00:00:00"^^xsd:dateTime ;
+                         <http://purl.org/dc/elements/1.1/title> "Digital Identity Description Language (DIDL) Information Model, Vocabulary, and Expression v0.1"@en ;
+                         <http://purl.org/dc/terms/abstract> """Identities are abstract concepts that represent entities within a given context. They may take various formats and serve diverse purposes. In data ecosystems, in which different participants share data and services in a secure, interoperable, and sovereign manner, identities are primarily considered for identification, authentication, and authorization. Here, identities must be represented concretely and precisely. 
+Digital Identity Description Language (DIDL) is an abstract language to describe identity concepts used in data ecosystems. The core component, identity, is specialized into identifiers, credentials, and assertions, utilized in the process of authentication and authorization."""@en ;
                          <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" ;
-                         <http://purl.org/dc/terms/modified> "2026-01-06T00:00:00"^^xsd:dateTime ;
                          rdfs:label "Digital Identity Description Language"@en ;
                          owl:versionInfo 0.1 ;
                          <https://schema.org/affiliation> "Institute for Man-Machine Interaction (MMI), RWTH Aachen University" ;
@@ -28,7 +26,9 @@
 
 
 ###  http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty ;
+                                              rdfs:comment "This individual represents description." ;
+                                              rdfs:label "description" .
 
 
 ###  http://purl.org/dc/elements/1.1/title
@@ -40,7 +40,9 @@
 
 
 ###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty ;
+                                   rdfs:comment "This individual represents created." ;
+                                   rdfs:label "created" .
 
 
 ###  http://purl.org/dc/terms/license
@@ -48,7 +50,8 @@
 
 
 ###  http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty ;
+                                    rdfs:label "modified" .
 
 
 ###  https://schema.org/affiliation
@@ -144,14 +147,6 @@
                   rdfs:label "credentialFormat"@en .
 
 
-###  https://w3id.org/didl#functional
-:functional rdf:type owl:ObjectProperty ;
-            rdfs:domain :Identifier ;
-            rdfs:range :IdentifierFunctional ;
-            rdfs:comment "Indicates that an identifier has its own application-specific use"@en ;
-            rdfs:label "functional"@en .
-
-
 ###  https://w3id.org/didl#identifier
 :identifier rdf:type owl:ObjectProperty ;
             rdfs:domain :IdentitySubject ;
@@ -166,6 +161,14 @@
                   rdfs:range :IdentifierFormat ;
                   rdfs:comment "Indicates that an identifier has its specific format"@en ;
                   rdfs:label "identifierFormat"@en .
+
+
+###  https://w3id.org/didl#identifierFunctional
+:identifierFunctional rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Identifier ;
+                      rdfs:range :IdentifierFunctional ;
+                      rdfs:comment "Indicates that an identifier has its own application-specific use"@en ;
+                      rdfs:label "identifierFunctional"@en .
 
 
 ###  https://w3id.org/didl#includesAssertion
@@ -184,12 +187,25 @@
                     rdfs:label "includesIdentifier"@en .
 
 
+###  https://w3id.org/didl#issuer
+:issuer rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty <https://www.w3.org/2018/credentials#issuer> ;
+        rdfs:domain :Identity .
+
+
 ###  https://w3id.org/didl#key
 :key rdf:type owl:ObjectProperty ;
      rdfs:domain :Attribute ;
      rdfs:range :Key ;
      rdfs:comment "Represents a key of an attribute"@en ;
      rdfs:label "key"@en .
+
+
+###  https://w3id.org/didl#profile
+:profile rdf:type owl:ObjectProperty ;
+         rdfs:domain :Identity ;
+         rdfs:comment "Indicates an identifier of a DIDL Profile that the identity conforms to"@en ;
+         rdfs:label "profile" .
 
 
 ###  https://w3id.org/didl#proof
@@ -229,7 +245,7 @@
 ###  https://w3id.org/didl#supportedAction
 :supportedAction rdf:type owl:ObjectProperty ;
                  rdfs:domain :AccessCapability ;
-                 rdfs:range <https://w3id.org/def/dedl#Action> ;
+                 rdfs:range <https://w3id.org/dedl#Action> ;
                  rdfs:comment "Indicates the actions supported by an access capability"@en ;
                  rdfs:label "supportedAction"@en .
 
@@ -237,7 +253,6 @@
 ###  https://w3id.org/didl#supportedResource
 :supportedResource rdf:type owl:ObjectProperty ;
                    rdfs:domain :AccessCapability ;
-                   rdfs:range <https://w3id.org/def/dedl#Resource> ;
                    rdfs:comment "Indicates the resources supported by an access capability"@en ;
                    rdfs:label "supportedResource"@en .
 
@@ -248,6 +263,10 @@
        rdfs:range :Value ;
        rdfs:comment "Represents a value of an attribute"@en ;
        rdfs:label "value"@en .
+
+
+###  https://www.w3.org/2018/credentials#issuer
+<https://www.w3.org/2018/credentials#issuer> rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -263,15 +282,6 @@
            rdfs:label "issueDate"@en .
 
 
-###  https://w3id.org/didl#issuer
-:issuer rdf:type owl:DatatypeProperty ;
-        owl:equivalentProperty <https://www.w3.org/ns/credentials#issuer> ;
-        rdfs:domain :Identity ;
-        rdfs:range xsd:anyURI ;
-        rdfs:comment "Indicates the issuer of an identity"@en ;
-        rdfs:label "issuer"@en .
-
-
 ###  https://w3id.org/didl#namespace
 :namespace rdf:type owl:DatatypeProperty ;
            rdfs:domain :Identifier ;
@@ -280,29 +290,12 @@
            rdfs:label "namespace"@en .
 
 
-###  https://w3id.org/didl#profile
-:profile rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :Identity ;
-         rdfs:range xsd:anyURI ;
-         rdfs:comment "Indicates an identifier of a DIDL Profile that the identity conforms to"@en ;
-         rdfs:label "profile"@en .
-
-
 ###  https://w3id.org/didl#renewableTill
 :renewableTill rdf:type owl:DatatypeProperty ;
                rdfs:domain :Identity ;
                rdfs:range xsd:dateTime ;
                rdfs:comment "Indicates that the identity can be renewed until the given time"@en ;
                rdfs:label "renewableTill"@en .
-
-
-###  https://w3id.org/didl#uid
-:uid rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Identity ;
-     rdfs:range xsd:anyURI ;
-     rdfs:comment "Indicates the unique identifier of an identity itself, e.g., an ID of a verifiable credential"@en ;
-     rdfs:label "uid"@en .
 
 
 ###  https://w3id.org/didl#validFrom
@@ -329,12 +322,6 @@
                                                  rdfs:label "issuanceDate"@en .
 
 
-###  https://www.w3.org/ns/credentials#issuer
-<https://www.w3.org/ns/credentials#issuer> rdf:type owl:DatatypeProperty ;
-                                           rdfs:comment "The entity that issued the credential"@en ;
-                                           rdfs:label "issuer"@en .
-
-
 ###  https://www.w3.org/ns/credentials#validFrom
 <https://www.w3.org/ns/credentials#validFrom> rdf:type owl:DatatypeProperty ;
                                               rdfs:comment "The date and time from which the credential is valid"@en ;
@@ -353,21 +340,34 @@
 
 ###  http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
-                                  owl:equivalentClass :IdentitySubject ;
-                                  rdfs:comment "An agent is an entity that can perform actions"@en ;
-                                  rdfs:label "Agent"@en .
+                                  owl:equivalentClass :IdentitySubject .
 
 
-###  https://w3id.org/def/dedl#Action
-<https://w3id.org/def/dedl#Action> rdf:type owl:Class ;
-                                   rdfs:comment "An action that can be performed on a resource"@en ;
-                                   rdfs:label "Action"@en .
+###  https://schema.org/Enumeration
+<https://schema.org/Enumeration> rdf:type owl:Class .
 
 
-###  https://w3id.org/def/dedl#Resource
-<https://w3id.org/def/dedl#Resource> rdf:type owl:Class ;
-                                     rdfs:comment "A resource that can be accessed or manipulated"@en ;
-                                     rdfs:label "Resource"@en .
+###  https://schema.org/Identifier
+<https://schema.org/Identifier> rdf:type owl:Class .
+
+
+###  https://schema.org/Identity
+<https://schema.org/Identity> rdf:type owl:Class .
+
+
+###  https://schema.org/PropertyValue
+<https://schema.org/PropertyValue> rdf:type owl:Class ;
+                                   owl:equivalentClass :Attribute .
+
+
+###  https://schema.org/Thing
+<https://schema.org/Thing> rdf:type owl:Class .
+
+
+###  https://w3id.org/dedl#Action
+<https://w3id.org/dedl#Action> rdf:type owl:Class ;
+                               rdfs:comment "An action that can be performed on a resource"@en ;
+                               rdfs:label "Action"@en .
 
 
 ###  https://w3id.org/didl#AccessCapability
@@ -423,7 +423,8 @@
 
 ###  https://w3id.org/didl#Identifier
 :Identifier rdf:type owl:Class ;
-            rdfs:subClassOf :Identity ;
+            rdfs:subClassOf <https://schema.org/Identifier> ,
+                            :Identity ;
             rdfs:comment "A unique reference to distinguish one entity from another"@en ;
             rdfs:label "Identifier"@en .
 
@@ -449,12 +450,14 @@
 
 ###  https://w3id.org/didl#Identity
 :Identity rdf:type owl:Class ;
+          rdfs:subClassOf <https://schema.org/Identity> ;
           rdfs:comment "A digital identity that can be specialized to identifiers, credentials, or assertions"@en ;
           rdfs:label "Identity"@en .
 
 
 ###  https://w3id.org/didl#IdentitySubject
 :IdentitySubject rdf:type owl:Class ;
+                 rdfs:subClassOf <https://schema.org/Thing> ;
                  rdfs:comment "An entity that is identified by an identity"@en ;
                  rdfs:label "IdentitySubject"@en .
 
@@ -488,6 +491,7 @@
 
 ###  https://w3id.org/didl#Status
 :Status rdf:type owl:Class ;
+        rdfs:subClassOf <https://schema.org/Enumeration> ;
         rdfs:comment "Relates to the status of an identity, including active, inactive, or revoked"@en ;
         rdfs:label "Status"@en .
 
@@ -525,7 +529,8 @@
 :Address rdf:type owl:NamedIndividual ,
                   :Key ;
          rdfs:comment "A key representing an address attribute"@en ;
-         rdfs:label "Address"@en .
+         rdfs:label "Address"@en ;
+         rdfs:seeAlso <https://schema.org/address> .
 
 
 ###  https://w3id.org/didl#ApplicationToken
@@ -574,7 +579,8 @@
 :DateOfBirth rdf:type owl:NamedIndividual ,
                       :Key ;
              rdfs:comment "A key representing a date of birth attribute"@en ;
-             rdfs:label "DateOfBirth"@en .
+             rdfs:label "DateOfBirth"@en ;
+             rdfs:seeAlso <https://schema.org/birthDate> .
 
 
 ###  https://w3id.org/didl#Department
@@ -629,8 +635,10 @@
 ###  https://w3id.org/didl#Email
 :Email rdf:type owl:NamedIndividual ,
                 :Key ;
-       rdfs:comment "A standardized structure for identifying electronic mailboxes, typically in the form local-part@domain, see also RFC 5322 and RFC 6531"@en ;
-       rdfs:label "Email" .
+       rdfs:comment "A standardized structure for identifying electronic mailboxes, typically in the form local-part@domain, see also RFC 5322 and RFC 6531, semantically aligned with value of foaf:mbox or schema:email"@en ;
+       rdfs:label "Email" ;
+       rdfs:seeAlso <http://xmlns.com/foaf/0.1/mbox> ,
+                    <https://schema.org/email> .
 
 
 ###  https://w3id.org/didl#Fingerprint
@@ -643,8 +651,10 @@
 ###  https://w3id.org/didl#FirstName
 :FirstName rdf:type owl:NamedIndividual ,
                     :Key ;
-           rdfs:comment "A key representing a first name attribute"@en ;
-           rdfs:label "FirstName"@en .
+           rdfs:comment "A key representing a first name attribute, semantically aligned with value of foaf:firstName or schema:givenName"@en ;
+           rdfs:label "FirstName"@en ;
+           rdfs:seeAlso <http://xmlns.com/foaf/0.1/firstName> ,
+                        <https://schema.org/givenName> .
 
 
 ###  https://w3id.org/didl#GUID
@@ -658,7 +668,9 @@
 :Gender rdf:type owl:NamedIndividual ,
                  :Key ;
         rdfs:comment "A key representing a gender attribute"@en ;
-        rdfs:label "Gender"@en .
+        rdfs:label "Gender"@en ;
+        rdfs:seeAlso <http://xmlns.com/foaf/0.1/gender> ,
+                     <https://schema.org/gender> .
 
 
 ###  https://w3id.org/didl#IDToken
@@ -720,8 +732,10 @@
 ###  https://w3id.org/didl#LastName
 :LastName rdf:type owl:NamedIndividual ,
                    :Key ;
-          rdfs:comment "A key representing a last name attribute"@en ;
-          rdfs:label "LastName"@en .
+          rdfs:comment "A key representing a last name attribute, semantically aligned with value of foaf:lastName or schema:familyName"@en ;
+          rdfs:label "LastName"@en ;
+          rdfs:seeAlso <http://xmlns.com/foaf/0.1/lastName> ,
+                       <https://schema.org/familyName> .
 
 
 ###  https://w3id.org/didl#MachineID
@@ -735,7 +749,8 @@
 :Nationality rdf:type owl:NamedIndividual ,
                       :Key ;
              rdfs:comment "A key representing a nationality attribute"@en ;
-             rdfs:label "Nationality"@en .
+             rdfs:label "Nationality"@en ;
+             rdfs:seeAlso <https://schema.org/nationality> .
 
 
 ###  https://w3id.org/didl#OneTimePassword
@@ -770,7 +785,8 @@
 :PhoneNumber rdf:type owl:NamedIndividual ,
                       :Key ;
              rdfs:comment "A key representing a phone number attribute"@en ;
-             rdfs:label "PhoneNumber"@en .
+             rdfs:label "PhoneNumber"@en ;
+             rdfs:seeAlso <https://schema.org/telephone> .
 
 
 ###  https://w3id.org/didl#ProcessID
@@ -791,7 +807,8 @@
 :PublicKey rdf:type owl:NamedIndividual ,
                     :Key ;
            rdfs:comment "A key representing a public key attribute"@en ;
-           rdfs:label "PublicKey"@en .
+           rdfs:label "PublicKey"@en ;
+           rdfs:seeAlso <https://w3id.org/security#publicKey> .
 
 
 ###  https://w3id.org/didl#RFC1035
@@ -991,23 +1008,12 @@
                                           rdfs:label "creator" .
 
 
-<http://purl.org/dc/elements/1.1/description> rdfs:comment "This individual represents description." ;
-                                              rdfs:label "description" .
-
-
 <http://purl.org/dc/elements/1.1/title> rdfs:comment "This individual represents title." ;
                                         rdfs:label "title" .
 
 
-<http://purl.org/dc/terms/created> rdfs:comment "This individual represents created." ;
-                                   rdfs:label "created" .
-
-
 <http://purl.org/dc/terms/license> rdfs:comment "This individual represents license." ;
                                    rdfs:label "license" .
-
-
-<http://purl.org/dc/terms/modified> rdfs:label "modified" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
