@@ -12,10 +12,10 @@
                          <http://purl.org/dc/terms/abstract> """Identities are abstract concepts that represent entities within a given context. They may take various formats and serve diverse purposes. In data ecosystems, in which different participants share data and services in a secure, interoperable, and sovereign manner, identities are primarily considered for identification, authentication, and authorization. Here, identities must be represented concretely and precisely. 
 Digital Identity Description Language (DIDL) is an abstract language to describe identity concepts used in data ecosystems. The core component, identity, is specialized into identifiers, credentials, and assertions, utilized in the process of authentication and authorization."""@en ;
                          <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" ;
+                         <http://schema.org/affiliation> "Institute for Man-Machine Interaction (MMI), RWTH Aachen University" ;
+                         <http://schema.org/email> "chen@mmi.rwth-aachen.de" ;
                          rdfs:label "Digital Identity Description Language"@en ;
-                         owl:versionInfo 0.1 ;
-                         <https://schema.org/affiliation> "Institute for Man-Machine Interaction (MMI), RWTH Aachen University" ;
-                         <https://schema.org/email> "chen@mmi.rwth-aachen.de" .
+                         owl:versionInfo 0.1 .
 
 #################################################################
 #    Annotation properties
@@ -54,12 +54,12 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                                     rdfs:label "modified" .
 
 
-###  https://schema.org/affiliation
-<https://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+###  http://schema.org/affiliation
+<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
 
 
-###  https://schema.org/email
-<https://schema.org/email> rdf:type owl:AnnotationProperty .
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -68,9 +68,12 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  http://purl.org/dc/elements/1.1/identifier
 <http://purl.org/dc/elements/1.1/identifier> rdf:type owl:ObjectProperty ;
-                                             owl:equivalentProperty :identifier ;
-                                             rdfs:comment "This property represents an unambiguous reference to a resource within a given context."@en ;
-                                             rdfs:label "identifier"@en .
+                                             owl:equivalentProperty :identifier .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:ObjectProperty ;
+                               owl:equivalentProperty :identifier .
 
 
 ###  https://w3id.org/didl#accessCapability
@@ -151,7 +154,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 :identifier rdf:type owl:ObjectProperty ;
             rdfs:domain :IdentitySubject ;
             rdfs:range :Identifier ;
-            rdfs:comment "Indicates that an identity subject (i.e., entity) has identifier(s)"@en ;
+            rdfs:comment "Indicates that an identity subject (i.e., an entity) can have identifier(s)"@en ;
             rdfs:label "identifier"@en .
 
 
@@ -183,7 +186,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 :includesIdentifier rdf:type owl:ObjectProperty ;
                     rdfs:domain :IdentifierCollection ;
                     rdfs:range :Identifier ;
-                    rdfs:comment "Indicates the local part of a composite identifier"@en ;
+                    rdfs:comment "Indicates the comprising identifiers"@en ;
                     rdfs:label "includesIdentifier"@en .
 
 
@@ -275,7 +278,6 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#issueDate
 :issueDate rdf:type owl:DatatypeProperty ;
-           owl:equivalentProperty <https://www.w3.org/ns/credentials#issuanceDate> ;
            rdfs:domain :Identity ;
            rdfs:range xsd:dateTime ;
            rdfs:comment "Indicates the issue date of an identity"@en ;
@@ -300,7 +302,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#validFrom
 :validFrom rdf:type owl:DatatypeProperty ;
-           owl:equivalentProperty <https://www.w3.org/ns/credentials#validFrom> ;
+           owl:equivalentProperty <https://www.w3.org/2018/credentials#validFrom> ;
            rdfs:domain :Identity ;
            rdfs:range xsd:dateTime ;
            rdfs:comment "Indicates the date from which an identity is valid"@en ;
@@ -309,65 +311,39 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#validTo
 :validTo rdf:type owl:DatatypeProperty ;
-         owl:equivalentProperty <https://www.w3.org/ns/credentials#validTo> ;
+         owl:equivalentProperty <https://www.w3.org/2018/credentials#validTo> ;
          rdfs:domain :Identity ;
          rdfs:range xsd:dateTime ;
          rdfs:comment "Indicates the date until which an identity is valid"@en ;
          rdfs:label "validTo"@en .
 
 
-###  https://www.w3.org/ns/credentials#issuanceDate
-<https://www.w3.org/ns/credentials#issuanceDate> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:comment "The date and time when the credential was issued"@en ;
-                                                 rdfs:label "issuanceDate"@en .
+###  https://www.w3.org/2018/credentials#issuanceDate
+<https://www.w3.org/2018/credentials#issuanceDate> rdf:type owl:DatatypeProperty .
 
 
-###  https://www.w3.org/ns/credentials#validFrom
-<https://www.w3.org/ns/credentials#validFrom> rdf:type owl:DatatypeProperty ;
-                                              rdfs:comment "The date and time from which the credential is valid"@en ;
-                                              rdfs:label "validFrom"@en .
+###  https://www.w3.org/2018/credentials#validFrom
+<https://www.w3.org/2018/credentials#validFrom> rdf:type owl:DatatypeProperty .
 
 
-###  https://www.w3.org/ns/credentials#validTo
-<https://www.w3.org/ns/credentials#validTo> rdf:type owl:DatatypeProperty ;
-                                            rdfs:comment "The date and time until which the credential is valid"@en ;
-                                            rdfs:label "validTo"@en .
+###  https://www.w3.org/2018/credentials#validTo
+<https://www.w3.org/2018/credentials#validTo> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://xmlns.com/foaf/0.1/Agent
-<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
-                                  owl:equivalentClass :IdentitySubject .
+###  http://schema.org/Enumeration
+<http://schema.org/Enumeration> rdf:type owl:Class .
 
 
-###  https://schema.org/Enumeration
-<https://schema.org/Enumeration> rdf:type owl:Class .
-
-
-###  https://schema.org/Identifier
-<https://schema.org/Identifier> rdf:type owl:Class .
-
-
-###  https://schema.org/Identity
-<https://schema.org/Identity> rdf:type owl:Class .
-
-
-###  https://schema.org/PropertyValue
-<https://schema.org/PropertyValue> rdf:type owl:Class ;
-                                   owl:equivalentClass :Attribute .
-
-
-###  https://schema.org/Thing
-<https://schema.org/Thing> rdf:type owl:Class .
+###  http://schema.org/Thing
+<http://schema.org/Thing> rdf:type owl:Class .
 
 
 ###  https://w3id.org/dedl#Action
-<https://w3id.org/dedl#Action> rdf:type owl:Class ;
-                               rdfs:comment "An action that can be performed on a resource"@en ;
-                               rdfs:label "Action"@en .
+<https://w3id.org/dedl#Action> rdf:type owl:Class .
 
 
 ###  https://w3id.org/didl#AccessCapability
@@ -423,8 +399,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#Identifier
 :Identifier rdf:type owl:Class ;
-            rdfs:subClassOf <https://schema.org/Identifier> ,
-                            :Identity ;
+            rdfs:subClassOf :Identity ;
             rdfs:comment "A unique reference to distinguish one entity from another"@en ;
             rdfs:label "Identifier"@en .
 
@@ -450,14 +425,13 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#Identity
 :Identity rdf:type owl:Class ;
-          rdfs:subClassOf <https://schema.org/Identity> ;
           rdfs:comment "A digital identity that can be specialized to identifiers, credentials, or assertions"@en ;
           rdfs:label "Identity"@en .
 
 
 ###  https://w3id.org/didl#IdentitySubject
 :IdentitySubject rdf:type owl:Class ;
-                 rdfs:subClassOf <https://schema.org/Thing> ;
+                 rdfs:subClassOf <http://schema.org/Thing> ;
                  rdfs:comment "An entity that is identified by an identity"@en ;
                  rdfs:label "IdentitySubject"@en .
 
@@ -491,7 +465,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#Status
 :Status rdf:type owl:Class ;
-        rdfs:subClassOf <https://schema.org/Enumeration> ;
+        rdfs:subClassOf <http://schema.org/Enumeration> ;
         rdfs:comment "Relates to the status of an identity, including active, inactive, or revoked"@en ;
         rdfs:label "Status"@en .
 
@@ -530,7 +504,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                   :Key ;
          rdfs:comment "A key representing an address attribute"@en ;
          rdfs:label "Address"@en ;
-         rdfs:seeAlso <https://schema.org/address> .
+         rdfs:seeAlso <http://schema.org/address> .
 
 
 ###  https://w3id.org/didl#ApplicationToken
@@ -580,7 +554,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                       :Key ;
              rdfs:comment "A key representing a date of birth attribute"@en ;
              rdfs:label "DateOfBirth"@en ;
-             rdfs:seeAlso <https://schema.org/birthDate> .
+             rdfs:seeAlso <http://schema.org/birthDate> .
 
 
 ###  https://w3id.org/didl#Department
@@ -637,8 +611,8 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                 :Key ;
        rdfs:comment "A standardized structure for identifying electronic mailboxes, typically in the form local-part@domain, see also RFC 5322 and RFC 6531, semantically aligned with value of foaf:mbox or schema:email"@en ;
        rdfs:label "Email" ;
-       rdfs:seeAlso <http://xmlns.com/foaf/0.1/mbox> ,
-                    <https://schema.org/email> .
+       rdfs:seeAlso <http://schema.org/email> ,
+                    <http://xmlns.com/foaf/0.1/mbox> .
 
 
 ###  https://w3id.org/didl#Fingerprint
@@ -653,8 +627,8 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                     :Key ;
            rdfs:comment "A key representing a first name attribute, semantically aligned with value of foaf:firstName or schema:givenName"@en ;
            rdfs:label "FirstName"@en ;
-           rdfs:seeAlso <http://xmlns.com/foaf/0.1/firstName> ,
-                        <https://schema.org/givenName> .
+           rdfs:seeAlso <http://schema.org/givenName> ,
+                        <http://xmlns.com/foaf/0.1/firstName> .
 
 
 ###  https://w3id.org/didl#GUID
@@ -669,8 +643,8 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                  :Key ;
         rdfs:comment "A key representing a gender attribute"@en ;
         rdfs:label "Gender"@en ;
-        rdfs:seeAlso <http://xmlns.com/foaf/0.1/gender> ,
-                     <https://schema.org/gender> .
+        rdfs:seeAlso <http://schema.org/gender> ,
+                     <http://xmlns.com/foaf/0.1/gender> .
 
 
 ###  https://w3id.org/didl#IDToken
@@ -734,8 +708,8 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                    :Key ;
           rdfs:comment "A key representing a last name attribute, semantically aligned with value of foaf:lastName or schema:familyName"@en ;
           rdfs:label "LastName"@en ;
-          rdfs:seeAlso <http://xmlns.com/foaf/0.1/lastName> ,
-                       <https://schema.org/familyName> .
+          rdfs:seeAlso <http://schema.org/familyName> ,
+                       <http://xmlns.com/foaf/0.1/lastName> .
 
 
 ###  https://w3id.org/didl#MachineID
@@ -750,7 +724,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                       :Key ;
              rdfs:comment "A key representing a nationality attribute"@en ;
              rdfs:label "Nationality"@en ;
-             rdfs:seeAlso <https://schema.org/nationality> .
+             rdfs:seeAlso <http://schema.org/nationality> .
 
 
 ###  https://w3id.org/didl#OneTimePassword
@@ -786,7 +760,7 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
                       :Key ;
              rdfs:comment "A key representing a phone number attribute"@en ;
              rdfs:label "PhoneNumber"@en ;
-             rdfs:seeAlso <https://schema.org/telephone> .
+             rdfs:seeAlso <http://schema.org/telephone> .
 
 
 ###  https://w3id.org/didl#ProcessID
@@ -974,16 +948,12 @@ Digital Identity Description Language (DIDL) is an abstract language to describe
 
 ###  https://w3id.org/didl#VerifiableCredential
 :VerifiableCredential rdf:type owl:NamedIndividual ,
-                               :AssertionFormat ;
-                      rdfs:comment "A tamper-evident digital credential containing claims about a subject, cryptographically signed by an issuer, and compliant with a standard format for decentralized identity ecosystems."@en ;
-                      rdfs:label "VerifiableCredential"@en .
+                               :AssertionFormat .
 
 
 ###  https://w3id.org/didl#VerifiablePresentation
 :VerifiablePresentation rdf:type owl:NamedIndividual ,
-                                 :AssertionFormat ;
-                        rdfs:comment "A packaged set of one or more Verifiable Credentials shared by a holder with a verifier, optionally including selective disclosure and proofs of authenticity."@en ;
-                        rdfs:label "VerifiablePresentation"@en .
+                                 :AssertionFormat .
 
 
 ###  https://w3id.org/didl#Voice

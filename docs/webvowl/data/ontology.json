@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/didl", "http://www.w3.org/2002/07/owl", "https://www.w3.org/2018/credentials", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/security", "https://www.w3.org/ns/credentials", "https://w3id.org/dedl", "http://purl.org/dc/elements/1.1" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/didl", "http://schema.org", "http://www.w3.org/2002/07/owl", "https://www.w3.org/2018/credentials", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/security", "https://w3id.org/dedl", "http://purl.org/dc/elements/1.1" ],
     "title" : {
       "en" : "Digital Identity Description Language (DIDL) Information Model, Vocabulary, and Expression v0.1"
     },
@@ -59,317 +59,112 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "42",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "43",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "44",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "45",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "46",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "10",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "55",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "32",
-    "type" : "owl:equivalentClass"
+    "id" : "45",
+    "type" : "owl:Thing"
   }, {
-    "id" : "38",
-    "type" : "owl:Class"
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "80",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "36",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "49",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "81",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "72",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://xmlns.com/foaf/0.1/Agent",
-    "baseIri" : "http://xmlns.com/foaf/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Agent"
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "3"
-  }, {
-    "iri" : "https://schema.org/Enumeration",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Enumeration"
-    },
-    "subClasses" : [ "23" ],
-    "attributes" : [ "external" ],
-    "id" : "22"
-  }, {
-    "iri" : "https://w3id.org/didl#Credential",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Credential",
-      "en" : "Credential"
-    },
-    "comment" : {
-      "en" : "A proof of an entity's identity"
-    },
-    "id" : "18",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "40",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "42",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "43",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "44",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "45",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "10",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "https://w3id.org/didl#CredentialFormat",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CredentialFormat",
-      "en" : "CredentialFormat"
-    },
-    "subClasses" : [ "20", "29", "27" ],
-    "comment" : {
-      "en" : "A credential format that is specified by a standard or a protocol"
-    },
-    "id" : "21"
-  }, {
-    "iri" : "https://w3id.org/didl#IdentitySubject",
-    "equivalent" : [ "3" ],
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IdentitySubject",
-      "en" : "IdentitySubject"
-    },
-    "comment" : {
-      "en" : "An entity that is identified by an identity"
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "1",
-    "superClasses" : [ "8" ]
-  }, {
-    "iri" : "https://w3id.org/didl#Identity",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Identity",
-      "en" : "Identity"
-    },
-    "subClasses" : [ "6", "18", "15" ],
-    "comment" : {
-      "en" : "A digital identity that can be specialized to identifiers, credentials, or assertions"
-    },
-    "id" : "2",
-    "superClasses" : [ "25" ]
-  }, {
-    "iri" : "https://w3id.org/didl#Assertion",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Assertion",
-      "en" : "Assertion"
-    },
-    "subClasses" : [ "5" ],
-    "comment" : {
-      "en" : "A collection of identity-related attributes asserted by a trusted party"
-    },
-    "id" : "6",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "https://w3id.org/didl#AccessCapability",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AccessCapability",
-      "en" : "AccessCapability"
-    },
-    "comment" : {
-      "en" : "A capability that defines what actions can be performed on which resources"
-    },
-    "id" : "55"
-  }, {
-    "iri" : "https://w3id.org/didl#IdentifierCollection",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IdentifierCollection",
-      "en" : "IdentifierCollection"
-    },
-    "comment" : {
-      "en" : "A accumulated identifier consists of multiple identifiers"
-    },
-    "id" : "14",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "https://w3id.org/didl#Attribute",
-    "equivalent" : [ "63" ],
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Attribute",
-      "en" : "Attribute"
-    },
-    "comment" : {
-      "en" : "An identity-related attribute consists of a key-value pair"
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://schema.org/Identifier",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Identifier"
-    },
-    "subClasses" : [ "15" ],
-    "attributes" : [ "external" ],
-    "id" : "38"
-  }, {
     "iri" : "https://w3id.org/didl#KnowledgeBasedCredential",
     "baseIri" : "https://w3id.org/didl",
     "instances" : 0,
@@ -401,8 +196,21 @@
     "comment" : {
       "en" : "A credential that indicates something you know"
     },
-    "id" : "20",
-    "superClasses" : [ "21" ]
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/didl#Credential",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Credential",
+      "en" : "Credential"
+    },
+    "comment" : {
+      "en" : "A proof of an entity's identity"
+    },
+    "id" : "9",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/security#Proof",
     "baseIri" : "https://w3id.org/security",
@@ -412,29 +220,72 @@
       "en" : "Proof"
     },
     "attributes" : [ "external" ],
-    "id" : "59"
+    "id" : "36"
   }, {
-    "iri" : "https://schema.org/PropertyValue",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
     "label" : {
-      "IRI-based" : "PropertyValue"
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "63"
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "11",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
   }, {
     "iri" : "https://w3id.org/dedl#Action",
     "baseIri" : "https://w3id.org/dedl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Action",
-      "en" : "Action"
-    },
-    "comment" : {
-      "en" : "An action that can be performed on a resource"
+      "IRI-based" : "Action"
     },
     "attributes" : [ "external" ],
-    "id" : "62"
+    "id" : "54"
   }, {
     "iri" : "https://w3id.org/didl#Key",
     "baseIri" : "https://w3id.org/didl",
@@ -450,7 +301,7 @@
         "seeAlso" : [ {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/familyName",
+          "value" : "http://schema.org/familyName",
           "type" : "iri"
         }, {
           "identifier" : "seeAlso",
@@ -483,7 +334,7 @@
         "seeAlso" : [ {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/telephone",
+          "value" : "http://schema.org/telephone",
           "type" : "iri"
         } ]
       },
@@ -519,7 +370,7 @@
         "seeAlso" : [ {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/nationality",
+          "value" : "http://schema.org/nationality",
           "type" : "iri"
         } ]
       },
@@ -557,7 +408,7 @@
         "seeAlso" : [ {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/address",
+          "value" : "http://schema.org/address",
           "type" : "iri"
         } ]
       },
@@ -590,7 +441,7 @@
         }, {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/gender",
+          "value" : "http://schema.org/gender",
           "type" : "iri"
         } ]
       },
@@ -618,12 +469,12 @@
         "seeAlso" : [ {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/email",
+          "value" : "http://xmlns.com/foaf/0.1/mbox",
           "type" : "iri"
         }, {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "http://xmlns.com/foaf/0.1/mbox",
+          "value" : "http://schema.org/email",
           "type" : "iri"
         } ]
       },
@@ -655,36 +506,18 @@
         "en" : "LastLogin"
       }
     }, {
-      "iri" : "https://w3id.org/didl#DateOfBirth",
-      "baseIri" : "https://w3id.org/didl",
-      "annotations" : {
-        "seeAlso" : [ {
-          "identifier" : "seeAlso",
-          "language" : "undefined",
-          "value" : "https://schema.org/birthDate",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A key representing a date of birth attribute"
-      },
-      "labels" : {
-        "IRI-based" : "DateOfBirth",
-        "en" : "DateOfBirth"
-      }
-    }, {
       "iri" : "https://w3id.org/didl#FirstName",
       "baseIri" : "https://w3id.org/didl",
       "annotations" : {
         "seeAlso" : [ {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "https://schema.org/givenName",
+          "value" : "http://xmlns.com/foaf/0.1/firstName",
           "type" : "iri"
         }, {
           "identifier" : "seeAlso",
           "language" : "undefined",
-          "value" : "http://xmlns.com/foaf/0.1/firstName",
+          "value" : "http://schema.org/givenName",
           "type" : "iri"
         } ]
       },
@@ -694,6 +527,24 @@
       "labels" : {
         "IRI-based" : "FirstName",
         "en" : "FirstName"
+      }
+    }, {
+      "iri" : "https://w3id.org/didl#DateOfBirth",
+      "baseIri" : "https://w3id.org/didl",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "http://schema.org/birthDate",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A key representing a date of birth attribute"
+      },
+      "labels" : {
+        "IRI-based" : "DateOfBirth",
+        "en" : "DateOfBirth"
       }
     }, {
       "iri" : "https://w3id.org/didl#InOrganization",
@@ -719,7 +570,7 @@
     "comment" : {
       "en" : "Relates to the key of an attribute's key-value pair"
     },
-    "id" : "33"
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/didl#PossessionBasedCredential",
     "baseIri" : "https://w3id.org/didl",
@@ -763,7 +614,7 @@
       "en" : "A credential that indicates something you have"
     },
     "id" : "27",
-    "superClasses" : [ "21" ]
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/didl#IdentifierFormat",
     "baseIri" : "https://w3id.org/didl",
@@ -803,16 +654,6 @@
         "undefined" : "E.164"
       }
     }, {
-      "iri" : "https://w3id.org/didl#DN",
-      "baseIri" : "https://w3id.org/didl",
-      "comment" : {
-        "en" : "A unique hierarchical identifier used to unambiguously identify an entry in an X.500 directory, composed of attribute–value pairs"
-      },
-      "labels" : {
-        "IRI-based" : "DN",
-        "undefined" : "DN"
-      }
-    }, {
       "iri" : "https://w3id.org/didl#GUID",
       "baseIri" : "https://w3id.org/didl",
       "comment" : {
@@ -821,6 +662,16 @@
       "labels" : {
         "IRI-based" : "GUID",
         "en" : "GUID"
+      }
+    }, {
+      "iri" : "https://w3id.org/didl#DN",
+      "baseIri" : "https://w3id.org/didl",
+      "comment" : {
+        "en" : "A unique hierarchical identifier used to unambiguously identify an entry in an X.500 directory, composed of attribute–value pairs"
+      },
+      "labels" : {
+        "IRI-based" : "DN",
+        "undefined" : "DN"
       }
     }, {
       "iri" : "https://w3id.org/didl#IRI",
@@ -873,16 +724,6 @@
         "undefined" : "EPC"
       }
     }, {
-      "iri" : "https://w3id.org/didl#RFC5322",
-      "baseIri" : "https://w3id.org/didl",
-      "comment" : {
-        "en" : "A standardized structure for identifying electronic mailboxes, typically in the form local-part@domain"
-      },
-      "labels" : {
-        "IRI-based" : "RFC5322",
-        "en" : "RFC5322"
-      }
-    }, {
       "iri" : "https://w3id.org/didl#RFC7613",
       "baseIri" : "https://w3id.org/didl",
       "comment" : {
@@ -891,6 +732,16 @@
       "labels" : {
         "IRI-based" : "RFC7613",
         "en" : "RFC7613"
+      }
+    }, {
+      "iri" : "https://w3id.org/didl#RFC5322",
+      "baseIri" : "https://w3id.org/didl",
+      "comment" : {
+        "en" : "A standardized structure for identifying electronic mailboxes, typically in the form local-part@domain"
+      },
+      "labels" : {
+        "IRI-based" : "RFC5322",
+        "en" : "RFC5322"
       }
     }, {
       "iri" : "https://w3id.org/didl#URL",
@@ -966,40 +817,30 @@
     "comment" : {
       "en" : "An identifier format that is specified by a standard or a protocol"
     },
-    "id" : "76"
-  }, {
-    "iri" : "https://schema.org/Identity",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Identity"
-    },
-    "subClasses" : [ "2" ],
-    "attributes" : [ "external" ],
-    "id" : "25"
+    "id" : "63"
   }, {
     "instances" : 0,
-    "union" : [ "6", "18" ],
+    "union" : [ "16", "9" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "52"
+    "id" : "66"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "80",
+    "id" : "68",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
+    "id" : "42",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "49",
+    "id" : "56",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -1115,20 +956,7 @@
     "comment" : {
       "en" : "A concept that represents the use of  an identifier"
     },
-    "id" : "81"
-  }, {
-    "iri" : "https://w3id.org/didl#AssertionCollection",
-    "baseIri" : "https://w3id.org/didl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AssertionCollection",
-      "en" : "AssertionCollection"
-    },
-    "comment" : {
-      "en" : "A accumulated assertion consists of multiple assertions"
-    },
-    "id" : "5",
-    "superClasses" : [ "6" ]
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/didl#InherenceBasedCredential",
     "baseIri" : "https://w3id.org/didl",
@@ -1161,8 +989,44 @@
     "comment" : {
       "en" : "A credential that indicates something you inherently have"
     },
-    "id" : "29",
-    "superClasses" : [ "21" ]
+    "id" : "47",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/didl#AssertionCollection",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssertionCollection",
+      "en" : "AssertionCollection"
+    },
+    "comment" : {
+      "en" : "A accumulated assertion consists of multiple assertions"
+    },
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/didl#CredentialFormat",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CredentialFormat",
+      "en" : "CredentialFormat"
+    },
+    "subClasses" : [ "6", "47", "27" ],
+    "comment" : {
+      "en" : "A credential format that is specified by a standard or a protocol"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://schema.org/Enumeration",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Enumeration"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
   }, {
     "iri" : "https://w3id.org/didl#AssertionFormat",
     "baseIri" : "https://w3id.org/didl",
@@ -1224,12 +1088,8 @@
     }, {
       "iri" : "https://w3id.org/didl#VerifiableCredential",
       "baseIri" : "https://w3id.org/didl",
-      "comment" : {
-        "en" : "A tamper-evident digital credential containing claims about a subject, cryptographically signed by an issuer, and compliant with a standard format for decentralized identity ecosystems."
-      },
       "labels" : {
-        "IRI-based" : "VerifiableCredential",
-        "en" : "VerifiableCredential"
+        "IRI-based" : "VerifiableCredential"
       }
     }, {
       "iri" : "https://w3id.org/didl#JsonWebToken",
@@ -1244,12 +1104,8 @@
     }, {
       "iri" : "https://w3id.org/didl#VerifiablePresentation",
       "baseIri" : "https://w3id.org/didl",
-      "comment" : {
-        "en" : "A packaged set of one or more Verifiable Credentials shared by a holder with a verifier, optionally including selective disclosure and proofs of authenticity."
-      },
       "labels" : {
-        "IRI-based" : "VerifiablePresentation",
-        "en" : "VerifiablePresentation"
+        "IRI-based" : "VerifiablePresentation"
       }
     }, {
       "iri" : "https://w3id.org/didl#X.509Certificate",
@@ -1285,7 +1141,7 @@
     "comment" : {
       "en" : "An assertion format that is specified by a standard or a protocol"
     },
-    "id" : "57"
+    "id" : "61"
   }, {
     "iri" : "https://w3id.org/didl#Value",
     "baseIri" : "https://w3id.org/didl",
@@ -1297,7 +1153,7 @@
     "comment" : {
       "en" : "Relates to the value of an attribute's key-value pair"
     },
-    "id" : "72"
+    "id" : "58"
   }, {
     "iri" : "https://w3id.org/didl#Identifier",
     "baseIri" : "https://w3id.org/didl",
@@ -1306,12 +1162,12 @@
       "IRI-based" : "Identifier",
       "en" : "Identifier"
     },
-    "subClasses" : [ "14" ],
+    "subClasses" : [ "34" ],
     "comment" : {
       "en" : "A unique reference to distinguish one entity from another"
     },
-    "id" : "15",
-    "superClasses" : [ "38", "2" ]
+    "id" : "22",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/didl#Status",
     "baseIri" : "https://w3id.org/didl",
@@ -1354,177 +1210,251 @@
     "comment" : {
       "en" : "Relates to the status of an identity, including active, inactive, or revoked"
     },
-    "id" : "23",
-    "superClasses" : [ "22" ]
+    "id" : "24",
+    "superClasses" : [ "25" ]
   }, {
-    "iri" : "https://schema.org/Thing",
-    "baseIri" : "https://schema.org",
+    "iri" : "https://w3id.org/didl#IdentitySubject",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IdentitySubject",
+      "en" : "IdentitySubject"
+    },
+    "comment" : {
+      "en" : "An entity that is identified by an identity"
+    },
+    "id" : "1",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://schema.org/Thing",
+    "baseIri" : "http://schema.org",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Thing"
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/didl#Identity",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Identity",
+      "en" : "Identity"
+    },
+    "subClasses" : [ "16", "9", "22" ],
+    "comment" : {
+      "en" : "A digital identity that can be specialized to identifiers, credentials, or assertions"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/didl#Assertion",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assertion",
+      "en" : "Assertion"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "en" : "A collection of identity-related attributes asserted by a trusted party"
+    },
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/didl#AccessCapability",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccessCapability",
+      "en" : "AccessCapability"
+    },
+    "comment" : {
+      "en" : "A capability that defines what actions can be performed on which resources"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/didl#IdentifierCollection",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IdentifierCollection",
+      "en" : "IdentifierCollection"
+    },
+    "comment" : {
+      "en" : "A accumulated identifier consists of multiple identifiers"
+    },
+    "id" : "34",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/didl#Attribute",
+    "baseIri" : "https://w3id.org/didl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attribute",
+      "en" : "Attribute"
+    },
+    "comment" : {
+      "en" : "An identity-related attribute consists of a key-value pair"
+    },
+    "id" : "38"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "4",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "9",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
-    "type" : "rdfs:SubClassOf"
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "16",
+    "id" : "15",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "17",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "24",
+    "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "28",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "11",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "37",
+    "id" : "31",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "39",
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
     "type" : "owl:objectProperty"
   }, {
     "id" : "41",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "48",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "50",
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "54",
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "56",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "58",
-    "type" : "owl:objectProperty"
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "60",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "61",
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "64",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "65",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "66",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "67",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "68",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "69",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "71",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "73",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "75",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "77",
-    "type" : "owl:disjointWith"
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "70",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
+    "id" : "71",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "79",
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
     "type" : "owl:disjointWith"
   }, {
     "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "82",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "83",
     "type" : "owl:objectProperty"
   }, {
     "id" : "84",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "85",
     "type" : "owl:objectProperty"
   }, {
     "id" : "86",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "87",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "88",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "89",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "90",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "91",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1542,70 +1472,123 @@
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
-    "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "4"
+    "iri" : "https://w3id.org/didl#supportedResource",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "supportedResource",
+      "en" : "supportedResource"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the resources supported by an access capability"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
   }, {
-    "range" : "8",
+    "iri" : "https://w3id.org/didl#credential",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "credential",
+      "en" : "credential"
+    },
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "7"
+    "comment" : {
+      "en" : "Indicates that an identity subject (i.e., entity) has credential(s)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "10",
+    "range" : "11",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "10",
-    "subproperty" : [ "11" ],
+    "domain" : "11",
+    "subproperty" : [ "12" ],
     "attributes" : [ "external", "object" ],
-    "id" : "9"
+    "id" : "10"
   }, {
-    "range" : "2",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "12"
-  }, {
-    "range" : "15",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://schema.org/identifier",
+    "baseIri" : "http://schema.org",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
     "id" : "13"
   }, {
     "range" : "2",
-    "domain" : "15",
+    "domain" : "9",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "16"
+    "id" : "14"
   }, {
     "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "16",
     "domain" : "18",
     "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
-    "range" : "21",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://www.w3.org/2018/credentials#validTo",
+    "baseIri" : "https://www.w3.org/2018/credentials",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "validTo"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
     "id" : "19"
   }, {
-    "range" : "25",
-    "domain" : "2",
+    "range" : "2",
+    "domain" : "22",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "id" : "21"
   }, {
-    "range" : "21",
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "7",
     "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
-    "range" : "21",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/didl#validFrom",
+    "equivalent" : [ "30" ],
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "validFrom",
+      "en" : "validFrom"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates the date from which an identity is valid"
+    },
+    "attributes" : [ "datatype" ],
     "id" : "28"
+  }, {
+    "range" : "32",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "22",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/didl#assertion",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "6",
+    "range" : "16",
     "label" : {
       "IRI-based" : "assertion",
       "en" : "assertion"
@@ -1615,69 +1598,69 @@
       "en" : "Indicates that an identity subject (i.e., entity) has assertion(s)"
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/didl#key",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "33",
+    "range" : "39",
     "label" : {
       "IRI-based" : "key",
       "en" : "key"
     },
-    "domain" : "32",
+    "domain" : "38",
     "comment" : {
       "en" : "Represents a key of an attribute"
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/didl#includesAssertion",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "6",
+    "range" : "16",
     "label" : {
       "IRI-based" : "includesAssertion",
       "en" : "includesAssertion"
     },
-    "domain" : "5",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates the constituent assertion of an assertion collection"
     },
     "attributes" : [ "object" ],
-    "id" : "34"
+    "id" : "40"
   }, {
     "iri" : "https://w3id.org/didl#credentialFormat",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "21",
+    "range" : "7",
     "label" : {
       "IRI-based" : "credentialFormat",
       "en" : "credentialFormat"
     },
-    "superproperty" : [ "9" ],
-    "domain" : "18",
+    "superproperty" : [ "10" ],
+    "domain" : "9",
     "comment" : {
       "en" : "Indicates that a credential has its specific format"
     },
     "attributes" : [ "object" ],
-    "id" : "11"
+    "id" : "12"
   }, {
     "iri" : "https://w3id.org/didl#namespace",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "36",
+    "range" : "42",
     "label" : {
       "IRI-based" : "namespace",
       "en" : "namespace"
     },
-    "domain" : "15",
+    "domain" : "22",
     "comment" : {
       "en" : "Indicates a namespace of an identifier, representing its definition scope"
     },
     "attributes" : [ "datatype" ],
-    "id" : "35"
+    "id" : "41"
   }, {
-    "range" : "38",
-    "domain" : "15",
+    "range" : "7",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/didl#controlledBy",
     "inverse" : "0",
@@ -1692,16 +1675,41 @@
       "en" : "Indicates an identity is controlled by an identity subject (i.e., entity)"
     },
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "44"
   }, {
-    "range" : "22",
-    "domain" : "23",
+    "range" : "7",
+    "domain" : "47",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/didl#issuer",
+    "equivalent" : [ "51" ],
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "issuer"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/didl#assertedAttribute",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "assertedAttribute",
+      "en" : "assertedAttribute"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Indicates that an assertion has asserted attribute(s)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
   }, {
     "iri" : "https://w3id.org/didl#renewableTill",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "49",
+    "range" : "56",
     "label" : {
       "IRI-based" : "renewableTill",
       "en" : "renewableTill"
@@ -1711,220 +1719,26 @@
       "en" : "Indicates that the identity can be renewed until the given time"
     },
     "attributes" : [ "datatype" ],
-    "id" : "48"
-  }, {
-    "iri" : "https://w3id.org/didl#assertedAttribute",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "assertedAttribute",
-      "en" : "assertedAttribute"
-    },
-    "domain" : "6",
-    "comment" : {
-      "en" : "Indicates that an assertion has asserted attribute(s)"
-    },
-    "attributes" : [ "object" ],
-    "id" : "50"
-  }, {
-    "iri" : "https://w3id.org/didl#relatesTo",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "relatesTo",
-      "en" : "relatesTo"
-    },
-    "domain" : "52",
-    "comment" : {
-      "en" : "Indicates that an assertion or a credential relates to an identifier of an entity"
-    },
-    "attributes" : [ "object" ],
-    "id" : "51"
-  }, {
-    "iri" : "https://w3id.org/didl#credentialAttribute",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "credentialAttribute",
-      "en" : "credentialAttribute"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Indicates that a credential has attribute(s) to describe a credential, e.g., username/password"
-    },
-    "attributes" : [ "object" ],
-    "id" : "53"
-  }, {
-    "iri" : "https://w3id.org/didl#accessCapability",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "55",
-    "label" : {
-      "IRI-based" : "accessCapability",
-      "en" : "accessCapability"
-    },
-    "domain" : "6",
-    "comment" : {
-      "en" : "Indicates that an assertion has associated access capabilities"
-    },
-    "attributes" : [ "object" ],
-    "id" : "54"
-  }, {
-    "iri" : "https://w3id.org/didl#assertionFormat",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "57",
-    "label" : {
-      "IRI-based" : "assertionFormat",
-      "en" : "assertionFormat"
-    },
-    "domain" : "6",
-    "comment" : {
-      "en" : "Indicates that an assertion has its specific format"
-    },
-    "attributes" : [ "object" ],
-    "id" : "56"
-  }, {
-    "iri" : "https://w3id.org/didl#proof",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "59",
-    "label" : {
-      "IRI-based" : "proof",
-      "en" : "proof"
-    },
-    "domain" : "6",
-    "comment" : {
-      "en" : "Indicates a proof of an assertion, which ensures the integrity and authenticity of the assertion"
-    },
-    "attributes" : [ "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "https://w3id.org/didl#status",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "status",
-      "en" : "status"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Indicates the current status of an identity"
-    },
-    "attributes" : [ "object" ],
-    "id" : "60"
-  }, {
-    "iri" : "https://w3id.org/didl#supportedAction",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "62",
-    "label" : {
-      "IRI-based" : "supportedAction",
-      "en" : "supportedAction"
-    },
-    "domain" : "55",
-    "comment" : {
-      "en" : "Indicates the actions supported by an access capability"
-    },
-    "attributes" : [ "object" ],
-    "id" : "61"
-  }, {
-    "iri" : "https://www.w3.org/ns/credentials#validFrom",
-    "baseIri" : "https://www.w3.org/ns/credentials",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "validFrom",
-      "en" : "validFrom"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "The date and time from which the credential is valid"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "64"
-  }, {
-    "iri" : "https://w3id.org/didl#supportedResource",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "supportedResource",
-      "en" : "supportedResource"
-    },
-    "domain" : "55",
-    "comment" : {
-      "en" : "Indicates the resources supported by an access capability"
-    },
-    "attributes" : [ "object" ],
-    "id" : "65"
-  }, {
-    "iri" : "https://w3id.org/didl#credential",
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "credential",
-      "en" : "credential"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Indicates that an identity subject (i.e., entity) has credential(s)."
-    },
-    "attributes" : [ "object" ],
-    "id" : "66"
-  }, {
-    "iri" : "https://www.w3.org/ns/credentials#issuanceDate",
-    "baseIri" : "https://www.w3.org/ns/credentials",
-    "range" : "44",
-    "label" : {
-      "IRI-based" : "issuanceDate",
-      "en" : "issuanceDate"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "The date and time when the credential was issued"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "67"
-  }, {
-    "iri" : "https://w3id.org/didl#validFrom",
-    "equivalent" : [ "64" ],
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "46",
-    "label" : {
-      "IRI-based" : "validFrom",
-      "en" : "validFrom"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Indicates the date from which an identity is valid"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "68"
-  }, {
-    "iri" : "https://w3id.org/didl#issuer",
-    "equivalent" : [ "70" ],
-    "baseIri" : "https://w3id.org/didl",
-    "range" : "40",
-    "label" : {
-      "IRI-based" : "issuer"
-    },
-    "domain" : "2",
-    "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "55"
   }, {
     "iri" : "https://w3id.org/didl#value",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "72",
+    "range" : "58",
     "label" : {
       "IRI-based" : "value",
       "en" : "value"
     },
-    "domain" : "32",
+    "domain" : "38",
     "comment" : {
       "en" : "Represents a value of an attribute"
     },
     "attributes" : [ "object" ],
-    "id" : "71"
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/didl#validTo",
-    "equivalent" : [ "74" ],
+    "equivalent" : [ "19" ],
     "baseIri" : "https://w3id.org/didl",
-    "range" : "47",
+    "range" : "52",
     "label" : {
       "IRI-based" : "validTo",
       "en" : "validTo"
@@ -1934,108 +1748,165 @@
       "en" : "Indicates the date until which an identity is valid"
     },
     "attributes" : [ "datatype" ],
-    "id" : "73"
+    "id" : "59"
   }, {
-    "range" : "76",
-    "domain" : "57",
+    "range" : "7",
+    "domain" : "61",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
+    "id" : "60"
   }, {
-    "range" : "21",
-    "domain" : "57",
+    "range" : "63",
+    "domain" : "61",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "77"
+    "id" : "62"
   }, {
     "iri" : "https://www.w3.org/2018/credentials#issuer",
     "baseIri" : "https://www.w3.org/2018/credentials",
-    "range" : "10",
+    "range" : "11",
     "label" : {
       "IRI-based" : "issuer"
     },
-    "domain" : "10",
+    "domain" : "11",
     "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "22",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/didl#relatesTo",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "relatesTo",
+      "en" : "relatesTo"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Indicates that an assertion or a credential relates to an identifier of an entity"
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "range" : "63",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://www.w3.org/2018/credentials#validFrom",
+    "baseIri" : "https://www.w3.org/2018/credentials",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "validFrom"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/didl#credentialAttribute",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "credentialAttribute",
+      "en" : "credentialAttribute"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates that a credential has attribute(s) to describe a credential, e.g., username/password"
+    },
+    "attributes" : [ "object" ],
     "id" : "70"
   }, {
-    "range" : "15",
-    "domain" : "18",
+    "range" : "9",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
-  }, {
-    "range" : "76",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
-  }, {
-    "iri" : "https://www.w3.org/ns/credentials#validTo",
-    "baseIri" : "https://www.w3.org/ns/credentials",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "validTo",
-      "en" : "validTo"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "The date and time until which the credential is valid"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "74"
-  }, {
-    "range" : "18",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "82"
+    "id" : "71"
   }, {
     "iri" : "http://purl.org/dc/elements/1.1/identifier",
     "baseIri" : "http://purl.org/dc/elements/1.1",
-    "range" : "10",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "identifier",
-      "en" : "identifier"
+      "IRI-based" : "identifier"
     },
-    "domain" : "10",
-    "comment" : {
-      "en" : "This property represents an unambiguous reference to a resource within a given context."
-    },
+    "domain" : "11",
     "attributes" : [ "external", "object" ],
-    "id" : "83"
+    "id" : "72"
   }, {
-    "range" : "15",
-    "domain" : "6",
+    "range" : "22",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "84"
+    "id" : "73"
   }, {
     "iri" : "https://w3id.org/didl#includesIdentifier",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "15",
+    "range" : "22",
     "label" : {
       "IRI-based" : "includesIdentifier",
       "en" : "includesIdentifier"
     },
-    "domain" : "14",
+    "domain" : "34",
     "comment" : {
-      "en" : "Indicates the local part of a composite identifier"
+      "en" : "Indicates the comprising identifiers"
     },
     "attributes" : [ "object" ],
-    "id" : "85"
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/didl#accessCapability",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "accessCapability",
+      "en" : "accessCapability"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Indicates that an assertion has associated access capabilities"
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/didl#assertionFormat",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "assertionFormat",
+      "en" : "assertionFormat"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Indicates that an assertion has its specific format"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://www.w3.org/2018/credentials#issuanceDate",
+    "baseIri" : "https://www.w3.org/2018/credentials",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "issuanceDate"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "77"
   }, {
     "iri" : "https://w3id.org/didl#identifierFormat",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "76",
+    "range" : "63",
     "label" : {
       "IRI-based" : "identifierFormat",
       "en" : "identifierFormat"
     },
-    "domain" : "15",
+    "domain" : "22",
     "comment" : {
       "en" : "Indicates that an identifier has its specific format"
     },
     "attributes" : [ "object" ],
-    "id" : "86"
+    "id" : "78"
   }, {
     "iri" : "https://w3id.org/didl#issueDate",
-    "equivalent" : [ "67" ],
     "baseIri" : "https://w3id.org/didl",
-    "range" : "80",
+    "range" : "68",
     "label" : {
       "IRI-based" : "issueDate",
       "en" : "issueDate"
@@ -2045,11 +1916,39 @@
       "en" : "Indicates the issue date of an identity"
     },
     "attributes" : [ "datatype" ],
-    "id" : "87"
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/didl#proof",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "proof",
+      "en" : "proof"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Indicates a proof of an assertion, which ensures the integrity and authenticity of the assertion"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/didl#status",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "status"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates the current status of an identity"
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
   }, {
     "iri" : "https://w3id.org/didl#profile",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "40",
+    "range" : "45",
     "label" : {
       "IRI-based" : "profile",
       "undefined" : "profile"
@@ -2059,45 +1958,59 @@
       "en" : "Indicates an identifier of a DIDL Profile that the identity conforms to"
     },
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "82"
   }, {
     "iri" : "https://w3id.org/didl#identifierFunctional",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "81",
+    "range" : "69",
     "label" : {
       "IRI-based" : "identifierFunctional",
       "en" : "identifierFunctional"
     },
-    "domain" : "15",
+    "domain" : "22",
     "comment" : {
       "en" : "Indicates that an identifier has its own application-specific use"
     },
     "attributes" : [ "object" ],
-    "id" : "89"
+    "id" : "83"
   }, {
     "iri" : "https://w3id.org/didl#relatesToCredential",
     "baseIri" : "https://w3id.org/didl",
-    "range" : "18",
+    "range" : "9",
     "label" : {
       "IRI-based" : "relatesToCredential"
     },
-    "domain" : "6",
+    "domain" : "16",
     "attributes" : [ "object" ],
-    "id" : "90"
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/didl#supportedAction",
+    "baseIri" : "https://w3id.org/didl",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "supportedAction",
+      "en" : "supportedAction"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the actions supported by an access capability"
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
   }, {
     "iri" : "https://w3id.org/didl#identifier",
-    "equivalent" : [ "83" ],
+    "equivalent" : [ "72", "13" ],
     "baseIri" : "https://w3id.org/didl",
-    "range" : "15",
+    "range" : "22",
     "label" : {
       "IRI-based" : "identifier",
       "en" : "identifier"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Indicates that an identity subject (i.e., entity) has identifier(s)"
+      "en" : "Indicates that an identity subject (i.e., an entity) can have identifier(s)"
     },
     "attributes" : [ "object" ],
-    "id" : "91"
+    "id" : "86"
   } ]
 }
