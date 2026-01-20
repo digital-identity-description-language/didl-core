@@ -2,7 +2,7 @@
     "@context": {
         "didl": "https://w3id.org/didl#",
         "dedl": "https://w3id.org/dedl#",
-        "sec": "https//w3id.org/security#", 
+        "sec": "https://w3id.org/security#", 
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "cred": "https://w3.org/2018/credentials#",
         "dc": "http://purl.org/dc/elements/1.1/",
