@@ -7,6 +7,8 @@
         "cred": "https://w3.org/2018/credentials#",
         "dc": "http://purl.org/dc/elements/1.1/",
         "dcterms": "http://purl.org/dc/terms/",
+        "@vocab": "https://w3id.org/didl#", 
+
         "uid": "@id",
 
         "AccessCapability": "didl:AccessCapability",
@@ -58,7 +60,7 @@
         "value": "didl:value",
 
 
-        "issuanceDate": {"@id": "didl:issuanceDate", "@type": "xsd:dateTime"},
+        "issueDate": {"@id": "didl:issueDate", "@type": "xsd:dateTime"},
         "validFrom": {"@id": "didl:validFrom", "@type": "xsd:dateTime"},
         "validTo": {"@id": "didl:validTo", "@type": "xsd:dateTime"},
         "namespace": "didl:namespace",
